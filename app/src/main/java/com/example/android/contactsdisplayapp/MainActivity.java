@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Declaring Uri variable to get the content of contact
                 Uri myData = ContactsContract.Contacts.CONTENT_URI;
 
                 Intent myActivity2 = new Intent(Intent.ACTION_VIEW, Uri.parse(String.valueOf(myData)) );
